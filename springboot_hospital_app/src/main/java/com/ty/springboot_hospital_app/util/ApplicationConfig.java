@@ -3,6 +3,7 @@ package com.ty.springboot_hospital_app.util;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -17,6 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class ApplicationConfig {
 
+	@Bean
 	public Docket getDocket() {
 		Contact contact = new Contact("TY", "www.ty.com", "tysupport@mail.com");
 
